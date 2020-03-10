@@ -38,8 +38,8 @@ txt files are assumed to be stored as above and also in <code>E:/Data/Behavioral
 ### MATLAB Path setting
     FindFiles.m
     get_Spiketime.m
-    figq_delta.m
-    QLfun_delta.m
+    figq_Qeach.m
+    QLfun_Q_each.m
     AxesPoint_1raster_new.m
     
 should be on the MATLAB path. (Or download and adding path <code>/basic</code> folder.)
@@ -71,8 +71,9 @@ Their properties distribution plot (fig 2B) is drawn by <code>fig2B_1220_cluster
 *****
 ### Calculating Q-values
 For each animal, from the behavioral result of all sessions the Q-values were calculated (Her et al., 2016).
-1. Fit all session of each animal (N=3) as described in the reference by running <code>Behavior code/total_ses.m</code>.
-2. Run <code>Q_value_per_rat_RL_ws_yj.m</code> to calculate Q_Left, Q_Right and Q_Chosen for each session as described in the reference.
+1. Make the input data matrix by running <code>Behavior code/total_cond.m</code> for each animal.
+2. Fit the behavior data on our model, with <code>Behavior code/Q_each_ses.m</code> for each animal.
+3. Run <code>Q_value_per_rat_RL_ws_yj.m</code> to calculate Q_Left, Q_Right and Q_Chosen for each session as described in the reference.
 *****
 ### Regression analysis
 For regression analysis in figure 3 and 4, follow the codes with the prefix 'fig3' or 'fig4'.
