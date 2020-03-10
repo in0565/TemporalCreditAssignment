@@ -71,9 +71,8 @@ Their properties distribution plot (fig 2B) is drawn by <code>fig2B_1220_cluster
 *****
 ### Calculating Q-values
 For each animal, from the behavioral result of all sessions the Q-values were calculated (Her et al., 2016).
-1. Make the input data matrix by running <code>Behavior code/total_cond.m</code> for each animal.
-2. Fit the behavior data on our model, with <code>Behavior code/total_animal_Q.m</code> for each animal.
-3. Run <code>Q_value_per_rat_RL_ws_yj.m</code> to calculate Q_Left, Q_Right and Q_Chosen for each session as described in the reference.
+1. Fit the behavior data on our model, with <code>Behavior code/total_animal_Q.m</code> for each animal.
+2. Run <code>Q_value_per_rat_RL_ws_yj.m</code> to calculate Q_Left, Q_Right and Q_Chosen for each session as described in the reference.
 *****
 ### Regression analysis
 For regression analysis in figure 3 and 4, follow the codes with the prefix 'fig3' or 'fig4'.
